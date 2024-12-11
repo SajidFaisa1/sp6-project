@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+} 
+a{
+    text-decoration: none; 
+    color: #ffffff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(229, 84, 115, 0.10);
+    padding: 15px 30px;
+}
+.navbar .logo {
+    color: #272727;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #272727;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4c4c;
+}
+.font-xxl{
+color: #272727;
+text-align: center;
+font-family: Lato;
+font-size: 40px;
+font-weight: 800;
+}
+.font-medium{
+color: #272727;
+text-align: center;
+margin-left:auto ;
+margin-right: auto;
+font-size: 24px;
+}
+.weight-700{
+    font-weight: 700;
+}
+.mt-medium{
+    margin-top: 128px;
+}
+.mt-small{
+    margin-top: 24px;
+}
+.mt-medium-xl{
+    margin-top: 48px;
+}
+.bg-primary{
+    background-color: rgba(229, 84, 115, 0.05)
+}
+.mt-x{
+    margin-top: 32px;
+}
+.text-small{
+font-size: 18px;
+color: rgba(39, 39, 39, 0.60);
+text-align: center;
+}
+.banner{
+    display: flex;
+    background-color: rgba(229, 84, 115, 0.10);
+    justify-content: space-around;
+    width: 100%  ;
+}
+.flex{
+    display: flex;
+    gap: 1%;
+}
+.space-around{
+    justify-content: space-around;
+}
+.mt-top{
+   margin-top:100px;
+}
+.border{
+    border: 1px solid black;
+}
+.mx-auto{
+    display: flex;
+    justify-content: center;
+}
+.w-80{
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+.bottom-border{
+    text-decoration: underline;
+}
+.banner-details{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.padding{
+    padding:4rem 0rem ;
+}
+.radius-xl{
+    border-radius: 8px;
+}
+.padding-xl{
+    padding:4rem 8rem;
+}
+.padding-xxl{
+    padding:10rem 0rem;
+}
+.header{
+color: #272727;
+font-size: 80px;
+font-weight: 800;
+}
+
+.description{
+color: rgba(39, 39, 39, 0.60);
+font-size: 18px;
+margin-top: 32px;
+margin-bottom: 32px;
+}
+.btn-primary-1{
+color: #FFF;
+font-size: 20px;
+padding: 20px 43px;
+margin: 20px 43px;
+background-color: #E55473;
+border-radius: 8px;
+ 
+
+}
+.img-1-bg{
+border-radius: 300px 300px 0px 0px;
+background: rgba(167, 33, 98, 0.15);
+padding: 7rem 7rem;
+padding-bottom: 0px;
+}
+.img-2-bg{
+border-radius: 300px 300px 0px 0px;
+background: rgba(71, 125, 17, 0.15);
+padding: 7rem 7rem;
+padding-bottom: 0px;
+
+}
+.img{
+width:  40%;
+height: 45%;
+}
+
+.img-3-bg{
+border-radius: 300px 300px 0px 0px;
+background: rgba(5, 151, 160, 0.15);
+padding: 7rem 7rem;
+padding-bottom: 0px;
+
+}
+.bg-img{
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+.input-field{
+    width: 50%;
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.center{
+    justify-content: center;
+}
+/* Signup button and modal
+ */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+} 
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.modal-header, .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header h2 {
+    margin: 0;
+}
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #E55473;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal form button:hover {
+    background-color: #C13D5A;
+}
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Purchase Button */
+.purchase-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #E55473;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.purchase-btn:hover {
+    background-color: white;
+    color: black;
+    border:  1px solid black ;
+}
+
+/* Add to Cart Button */
+.cart-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: #272727;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50%;
+    margin-top: 1rem;
+}
+
+.cart-btn:hover {
+    background-color: #e0e0e0;
+}
+/* Floating Cart Styles */
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+}
+
+.floating-cart h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #272727;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+#checkout-btn {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #E55473;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background-color: #C13D5A;
+}
+/* Total Price */
+.cart-total {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    margin: 10px 0;
+    color: #272727;
+}
+
+/* Style for the login button in the navbar */
+.login-btn {
+    padding: 10px 20px;
+    background-color: #E55473;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #D44360; /* Darker shade for hover effect */
+}
+/* Modal styling (reuse existing signup modal styles if possible) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background-color: #0056b3;
+}
+/* Style for the login button in the navbar */
+.login-btn {
+    padding: 10px 20px;
+    background-color: #E55473;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #D44360; /* Darker shade for hover effect */
+}
+.tables{
+    width: 50%;
+    border-collapse: collapse; /* Removes double borders */
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+#user-table td button.edit-btn, #user-table td button.delete-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+#user-table td button.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#user-table td button.edit-btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+#user-table td button.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+#user-table td button.delete-btn:hover {
+    background-color: #e53935; /* Darker red */
+}
+
+#user-table td button:hover {
+    transition: background-color 0.3s ease;
+}
+th, td {
+    border: 1px solid #ddd; /* Adds borders */
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray background for headers */
+    color: #333; /* Darker text for headers */
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

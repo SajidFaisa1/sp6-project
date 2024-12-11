@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower-shop</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <p class="font-xxl"><span style="color: #E55473;">Flower</span><span style="color: #272727;">Shop</span> </p>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+             
+        </ul>
+        
+    </nav>
+    <!-- Banner -->
+    <section>
+         <div class="banner">
+            <div class="banner-details">
+                <p class="header">Let's make <br> beautiful flowers a <br> part of your life.</p>
+                <p class="description">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout. The point of using Lorem Ipsum is <br> that it has a more-or-less normal distribution of letters.</p>
+               <button class="btn-primary-1"><a href="">Shop Now</a></button>
+            </div>
+            <div>
+                <img src="images/pngwing 10.png" alt="">
+            </div>
+         </div>
+         
+    </section>
+
+    <!-- Featured -->
+    <section>
+        <div>
+            <p class="font-xxl mt-medium">Our Featured Flower</p>
+            <p class="text-small mt-small">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+        </div>
+
+        <!-- flower section -->
+        <div class="flex space-around mt-medium-xl w-80 ">
+            <div class="">
+                <img class="mt-top img img-1-bg " src="images/pngwing 6.png" alt="">
+                <p class="font-medium bottom-border mt-x weight-700">Pink Flower Tree</p>
+            </div>
+            <div class="">
+                <img class="mt-top img img-2-bg " src="images/pngwing 7.png" alt="">
+                <p class="font-medium bottom-border mt-x weight-700">YellowFlower Tree</p>
+
+            </div>
+            <div class=" ">
+                <img class="mt-top img img-3-bg" src="images/pngwing 5.png" alt="">
+                <p class="font-medium bottom-border mt-x weight-700">Mix Flower Tree</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-80 flex bg-primary space-around padding radius-xl mt-medium">
+            <div class="">
+                <div class="mx-auto">
+                    <img class="" src="images/Group 57.png" alt="">
+                </div>
+                
+                <p class="font-medium mt-small">
+                    Same Day Delivery. Click & Collect.
+                </p>
+            </div>
+        <div>
+            <div class="mx-auto">
+                <img class="" src="images/Group 58.png" alt="">
+            </div>
+                <p class="font-medium mt-small">Fresh Flowers. Local Growers.</p>
+        </div>
+            <div>
+                <div class="mx-auto">
+                    <img class="" src="images/Group 59.png" alt="">
+                </div>
+                <p class="font-medium mt-small">24/7 Free Support.</p>
+            
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class=" bg-primary mt-medium padding flex space-around padding-xl">
+           <div class="banner-details">
+               <p class="font-xxl">Hot Deal ! Sale Up To 25% Off
+               </p>
+               <p class="text-small mt-small">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+               <div class=" mx-auto">
+                <button id="open-modal" class="btn-primary-1 mt-small">Sign Up</button>
+                 <button id="open-login-modal" class="login-btn btn-primary-1">Login</button> 
+
+    <!-- Modal for Sign-Up Form -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sign Up</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <form id="signup-form" action="connect.php" method="post">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                
+                <!-- Error message for password mismatch -->
+                <span id="password-error" style="color: red; display: none;">Passwords do not match.</span>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+    </div>          
+</div>
+    <div>
+        <img src="images/pngwing 8.png" alt="">
+    </div>
+</div>
+   </section>
+   <h2 style="text-align: center; padding-top: 50px;" >Data Table</h2>
+   <section class="info" id="user-data">
+    
+    <table class="tables" id="user-table">
+        <thead >
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+</section>
+   <section>
+    <div>
+        <p class="font-xxl mt-medium">Instagram</p>
+        <p class="text-small mt-small">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+    </div>
+
+    <!-- Flower Section -->
+    <div class="flex space-around mt-medium-xl w-80">
+        <!-- Flower 1 -->
+        <div class="flower-item">
+            <img class="" src="images/Flower 01.png" alt="Pink Flower">
+            <p class="font-medium mt-small">Price: 450৳</p>
+            <div class="button-group">
+                <button class="btn-primary-1 purchase-btn">Purchase</button>
+                <button class="btn-secondary-1 cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Flower 2 -->
+        <div class="flower-item">
+            <img class="" src="images/Rectangle 4.png" alt="Yellow Flower">
+            <p class="font-medium mt-small">Price: 699৳</p>
+            <div class="button-group">
+                <button class="btn-primary-1 purchase-btn">Purchase</button>
+                <button class="btn-secondary-1 cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Flower 3 -->
+        <div class="flower-item">
+            <img class="" src="images/Rectangle 5.png" alt="Mixed Flowers">
+            <p class="font-medium mt-small">Price: 1449৳</p>
+            <div class="button-group">
+                <button class="btn-primary-1 purchase-btn">Purchase</button>
+                <button class="btn-secondary-1 cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Flower 4 -->
+        <div class="flower-item">
+            <img class="" src="images/Rectangle 6.png" alt="White Flowers">
+            <p class="font-medium mt-small">Price: 900৳</p>
+            <div class="button-group">
+                <button class="btn-primary-1 purchase-btn">Purchase</button>
+                <button class="btn-secondary-1 cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section> 
+        <div class="bg-img w-80 padding-xxl mt-medium">
+            <p class="font-xxl">Get The Latest Deals</p>
+            <p class="text-small mt-small">৳300 coupon for first shopping</p>
+            <div class=" mx-auto mt-medium-xl">
+                <input class="input-field" type="text" placeholder="Enter your email here...">
+                <button class="btn-primary-1 "><a href="">Subscribe</a></button>
+            </div>
+            
+        </div>
+
+    </section>
+    <section>
+        <div class="">
+                <p class="font-xxl mt-medium""> Our Media Partner</p>
+            
+            <div class="flex space-around  ">
+                <div class=" mt-medium-xl">
+                    <img src="images/partner/facebook.png" alt="">
+                </div>
+                <div class="mt-medium-xl">
+                    <img src="images/partner/youtube.png" alt="">
+                </div>
+                <div class="mt-medium-xl">
+                    <img src="images/partner/twitch.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+       
+    </section>
+    
+    <!-- footer -->
+    <section>
+
+        <div class="padding-xxl mt-medium-xl" style="background-color: #111010;">
+            <p class="font-xxl"><span style="color: #E55473;">Flower</span><span style="color: white;">Shop</span> </p>
+            <p class="text-small mt-small" style="color: rgba(255, 255, 255, 0.90);">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+            <p class="text-small mt-small" style="color: rgba(255, 255, 255, 0.40);
+            ">@2020-2024, FlowerShop.com. All rights reserved by Faisal Tajwar & Tamim Hossain. </p>
+        </div>
+    </section>
+    <!-- Floating Cart -->
+<!-- Floating Cart -->
+<div id="floating-cart" class="floating-cart">
+    <h3>Cart</h3>
+    <ul id="cart-items">
+        <!-- Items will be dynamically added here -->
+    </ul>
+    <p id="cart-total" class="cart-total">Total: 0৳</p>
+    
+    <!-- Hidden form for submitting cart data -->
+    <form action="order.php" method="POST" id="checkout-form">
+    
+        <input type="hidden"  id="cart-total-input" name="total" value="0">
+         
+          
+         
+        <button type="submit" id="checkout-btn" class="btn-primary-1">Checkout</button>
+    </form>
+</div>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal" >
+    <div class="modal-content">
+        <span id="close-login-modal" class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form" >
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+
+            <button type="submit" class="modal-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Add this button to open the Login Modal -->
+ 
+
+
+ 
+<script src="script.js"></script>
+
+   
+</body>
+</html>
